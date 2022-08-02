@@ -39,6 +39,7 @@ int main()
             if(!isInputValid(lname)) goto OUTSIDE;
             cout << "Enter initil Balance: ";
             if(!isInputValid(balance)) goto OUTSIDE;
+            acc = b.OpenAccount(fname, lname, balance);
             cout << endl
                  << "Congradulation Account is Created" << endl;
             cout << acc;
